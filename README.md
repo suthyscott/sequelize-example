@@ -1,14 +1,17 @@
-install sequelize and helper libraries, along with dotenv library
+install sequelize and helper libraries, along with dotenv library:
+
 `npm i sequelize pg pg-hstore dotenv`
 
 Set up a CONNECTION_STRING variable in your .env file
 
+```
 CONNECTION_STRING=[your postgres db uri]
+```
 
 setup sequelize in controller or other server file:
--require and configure .env process, import environmental variable
--require Sequelize class
--create sequelize instance
+- require and configure .env process, import environmental variable
+- require Sequelize class
+- create sequelize instance
 
 ```
 require('dotenv').config()
